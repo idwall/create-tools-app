@@ -1,0 +1,25 @@
+{
+  "name": "tools-squad",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "next start",
+    "dev": "next dev",
+    "build": "next",
+    "lint": "xo --quiet"
+  },
+  "dependencies": {
+    "axios": "latest"
+  },
+  "devDependencies": {},
+  "xo": {
+    "extends": ["prettier", "prettier/react", "plugin:react/recommended"]
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "npm run lint",
+      "prettier --semi false --single-quote --write",
+      "git add"
+    ]
+  }
+}

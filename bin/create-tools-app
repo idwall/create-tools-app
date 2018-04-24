@@ -1,0 +1,38 @@
+#! /usr/bin/env node
+
+// Packages
+const chalk = require('chalk')
+const meow = require('meow')
+const updateNotifier = require('update-notifier')
+
+// Lib
+const { createToolsApp } = require('./..')
+
+const cli = meow(
+  `
+ Usage:
+   $ create-tools-app <project-directory>
+   $ create-tools-app <project-directory> <example-name>
+
+ Example:
+  $ create-tools-app new-dashboard
+  $ create-tools-app new-dashboard with-apollo
+
+ Options:
+   -h, --help            Show help options
+   -v, --version         Show version
+`,
+  {
+    alias: {
+      h: 'help',
+      v: 'version'
+    }
+  }
+)
+
+updateNotifier({ pkg: cli.pkg }).notify()
+
+const projectName = cli.input[0]
+const example = cli.input[1]
+
+createToolsApp({ projectName, example })

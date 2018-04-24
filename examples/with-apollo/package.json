@@ -1,0 +1,47 @@
+{
+  "name": "with-apollo",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "lint": "xo --quiet",
+    "precommit": "lint-staged"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.1.3",
+    "graphql": "0.13.2",
+    "isomorphic-unfetch": "2.0.0",
+    "next": "latest",
+    "prop-types": "15.6.1",
+    "react": "16.2.0",
+    "react-apollo": "2.1.0",
+    "react-dom": "16.2.0",
+    "graphql-tag": "latest"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^2.9.0",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.4",
+    "prettier": "^1.12.1",
+    "xo": "^0.20.3"
+  },
+  "xo": {
+    "extends": ["prettier", "prettier/react", "plugin:react/recommended"],
+    "rules": {
+      "import/no-named-as-default": 0,
+      "import/no-named-as-default-member": 0,
+      "import/default": 0,
+      "import/namespace": 0
+    },
+    "ignores": ["hoc/with-data.js"]
+  },
+  "lint-staged": {
+    "*.js": [
+      "npm run test",
+      "npm run lint",
+      "prettier --semi false --single-quote --write",
+      "git add"
+    ]
+  }
+}
