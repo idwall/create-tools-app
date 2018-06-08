@@ -7,7 +7,7 @@ import { ApolloProvider, getDataFromTree } from 'react-apollo'
 import Head from 'next/head'
 
 // Services
-import initApollo from './../services/init-apollo'
+import initApollo from '../services/init-apollo'
 
 // Gets the display name of a JSX component for dev tools
 function getComponentDisplayName(Component) {

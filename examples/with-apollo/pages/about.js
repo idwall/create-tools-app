@@ -7,13 +7,13 @@ import { graphql } from 'react-apollo'
 import gql from 'graphql-tag'
 
 // Layouts
-import App from './../layouts/app'
+import App from '../layouts/app'
 
 // Components
-import Pokemon from './../components/pokemon'
+import Pokemon from '../components/pokemon'
 
 // HOC
-import withData from './../hoc/with-data'
+import withData from '../hoc/with-data'
 
 class About extends Component {
   render() {

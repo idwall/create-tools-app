@@ -6,11 +6,11 @@ import Head from 'next/head'
 import PropTypes from 'prop-types'
 
 // Components
-import Header from './../components/header'
-import Footer from './../components/footer'
+import Header from '../components/header'
+import Footer from '../components/footer'
 
 // UI
-import Row from './../ui/row'
+import Row from '../ui/row'
 
 const App = ({ children }) => {
   return (
