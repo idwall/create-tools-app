@@ -1,0 +1,5 @@
+# Environment variables
+
+## API
+API_URL=https://iddog-api.now.sh
+API_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJpZGRvZyIsInN1YiI6IjVhZDY4YzZkNTM0MzRhMDA0YmE3ZTc1ZCIsImlhdCI6MTUyNDAxMDA5MywiZXhwIjoxNTI1MzA2MDkzfQ.Pjr3A4s-Bdeh-nmske1VWTHJGbbv41heW5AEJPKabDA
