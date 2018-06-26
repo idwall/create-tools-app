@@ -17,7 +17,9 @@
     "react": "16.2.0",
     "react-apollo": "2.1.0",
     "react-dom": "16.2.0",
-    "graphql-tag": "latest"
+    "graphql-tag": "latest",
+    "babel-plugin-inline-dotenv": "^1.1.2",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3"
   },
   "devDependencies": {
     "eslint-config-prettier": "^2.9.0",
@@ -38,8 +40,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run test",
-      "npm run lint",
+      "yarn test",
+      "yarn lint",
       "prettier --semi false --single-quote --write",
       "git add"
     ]

@@ -16,8 +16,8 @@
   },
   "lint-staged": {
     "*.js": [
-      "npm run test",
-      "npm run lint",
+      "yarn test",
+      "yarn lint",
       "prettier --semi false --single-quote --write",
       "git add"
     ]
