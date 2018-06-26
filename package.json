@@ -1,6 +1,6 @@
 {
   "name": "create-tools-app",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Create Tools apps in one command",
   "main": "index.js",
   "repository": "idwall/create-tools-app",
@@ -9,7 +9,11 @@
   "bin": {
     "create-tools-app": "./bin/create-tools-app"
   },
-  "files": ["bin", "lib", "index.js"],
+  "files": [
+    "bin",
+    "lib",
+    "index.js"
+  ],
   "keywords": [
     "create-tools-app",
     "boilerplate",
@@ -45,8 +49,13 @@
     "xo": "^0.20.3"
   },
   "xo": {
-    "extends": ["prettier"],
-    "ignores": ["examples", "lib/templates"],
+    "extends": [
+      "prettier"
+    ],
+    "ignores": [
+      "examples",
+      "lib/templates"
+    ],
     "rules": {
       "unicorn/no-process-exit": 0
     }
